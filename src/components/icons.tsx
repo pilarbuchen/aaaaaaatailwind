@@ -155,7 +155,7 @@ export const CartIcon = ({ cart }: { cart: Cart }) => {
         </g>
       </svg>
       {cart.length ? (
-        <div className="bg-yellow p-2 w-[18px] h-[18px] flex items-center justify-center font-bold rounded-full absolute -top-[5px] -right-[5px] text-xs">
+        <div className="bg-red-800 p-2 w-[18px] h-[18px] flex items-center justify-center font-bold rounded-full absolute -top-[5px] -right-[5px] text-xs">
           {cart.map((i) => i.quantity).reduce((a, b) => a + b)}
         </div>
       ) : null}
